@@ -1,0 +1,6 @@
+interface:
+  display_name: "卷卷冷知识短片 V2"
+  short_description: "卷卷3D冷知识、职场内容与慢拾光训练承接"
+  default_prompt: "使用 $juanjuan-cold-fact-shorts-v2 为卷卷制作一条经过核实的职场冷知识短片，并输出对应的慢拾光训练卡。"
+policy:
+  allow_implicit_invocation: true
