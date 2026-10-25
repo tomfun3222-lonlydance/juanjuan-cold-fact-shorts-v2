@@ -5,6 +5,7 @@
 ## 能做什么
 
 - 生成 8–25 秒卷卷 3D 冷知识短片选题和剧本
+- 写剧本时先展示“序幕—第一幕—第二幕—第三幕—尾镜”的可读故事大纲，再展开分镜和制作细节
 - 输出稳定的首帧、尾帧和图生视频提示词
 - 支持 LIBTV 分镜协作
 - 保持卷卷角色外形、配色、验证环和性格一致
@@ -20,6 +21,7 @@ juanjuan-cold-fact-shorts-v2/
 ├── agents/openai.yaml
 ├── assets/juanjuan-fresh-mint-reference.png
 └── references/
+    ├── story-outline.md
     ├── prompt-format.md
     ├── publishing-style.md
     └── workplace-slowlight.md
@@ -54,6 +56,14 @@ $juanjuan-cold-fact-shorts-v2 制作一期关于任务切换的职场冷知识�
 ```text
 $juanjuan-cold-fact-shorts-v2 把这个选题做成完整剧集，输出事实来源、剧本、首尾帧、图生视频提示词、封面和发布文案。
 ```
+
+只展开故事大纲：
+
+```text
+$juanjuan-cold-fact-shorts-v2 把“方形泡泡棒为什么吹出圆泡泡”拓展成 24 秒剧本，按序幕、第一幕、第二幕、第三幕、尾镜展示，先不展开生成提示词。
+```
+
+剧本首先在回复正文中展示标题、类型、时长建议、基调、场景动作与逐字对白；完整制作包还会保存一份独立大纲。格式规范见 [references/story-outline.md](references/story-outline.md)。
 
 ## 两个角色的分工
 
